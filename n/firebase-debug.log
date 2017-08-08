@@ -1,0 +1,44 @@
+[debug] [2017-08-08T21:08:39.722Z] ----------------------------------------------------------------------
+[debug] [2017-08-08T21:08:39.725Z] Command:      /usr/local/Cellar/node/8.1.4/bin/node /usr/local/bin/firebase init
+[debug] [2017-08-08T21:08:39.725Z] CLI Version:  3.9.1
+[debug] [2017-08-08T21:08:39.725Z] Platform:     darwin
+[debug] [2017-08-08T21:08:39.725Z] Node Version: v8.1.4
+[debug] [2017-08-08T21:08:39.725Z] Time:         Tue Aug 08 2017 15:08:39 GMT-0600 (MDT)
+[debug] [2017-08-08T21:08:39.725Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-08-08T21:08:39.736Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] [2017-08-08T21:08:39.737Z] > authorizing via signed-in user
+[info] 
+     🔥🔥🔥🔥🔥🔥🔥🔥 🔥🔥🔥🔥 🔥🔥🔥🔥🔥🔥🔥🔥  🔥🔥🔥🔥🔥🔥🔥🔥 🔥🔥🔥🔥🔥🔥🔥🔥     🔥🔥🔥     🔥🔥🔥🔥🔥🔥  🔥🔥🔥🔥🔥🔥🔥🔥
+     🔥🔥        🔥🔥  🔥🔥     🔥🔥 🔥🔥       🔥🔥     🔥🔥  🔥🔥   🔥🔥  🔥🔥       🔥🔥
+     🔥🔥🔥🔥🔥🔥    🔥🔥  🔥🔥🔥🔥🔥🔥🔥🔥  🔥🔥🔥🔥🔥🔥   🔥🔥🔥🔥🔥🔥🔥🔥  🔥🔥🔥🔥🔥🔥🔥🔥🔥  🔥🔥🔥🔥🔥🔥  🔥🔥🔥🔥🔥🔥
+     🔥🔥        🔥🔥  🔥🔥    🔥🔥  🔥🔥       🔥🔥     🔥🔥 🔥🔥     🔥🔥       🔥🔥 🔥🔥
+     🔥🔥       🔥🔥🔥🔥 🔥🔥     🔥🔥 🔥🔥🔥🔥🔥🔥🔥🔥 🔥🔥🔥🔥🔥🔥🔥🔥  🔥🔥     🔥🔥  🔥🔥🔥🔥🔥🔥  🔥🔥🔥🔥🔥🔥🔥🔥
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/joshuasaunders/Documents/gschool/Q1
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2017-08-08T21:08:43.754Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects  
+ Tue Aug 08 2017 15:08:43 GMT-0600 (MDT)
+[debug] [2017-08-08T21:08:44.407Z] <<< HTTP RESPONSE 200
+[debug] [2017-08-08T21:08:56.457Z] TypeError: Cannot read property 'setRawMode' of null
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2017-08-08T21:08:56.461Z] Error: write EIO
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2017-08-08T21:08:56.731Z] TypeError: Cannot read property 'setRawMode' of null
+[error] 
+[error] Error: An unexpected error has occurred.

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>School Zones</title>
+    <link style="text/css" rel="stylesheet" href="style.css">
+    <link style="text/css" rel="stylesheet" href="./map-icons-master 2/dist/css/map-icons.css">
+    <link href="./map-icons-master 2/dist/fonts">
+    <link href="https://fonts.googleapis.com/css?family=Advent+Pro|Antic+Slab|Cabin|Cagliostro|Josefin+Sans|Julius+Sans+One|Kameron|News+Cycle|Raleway|Scope+One|Text+Me+One" rel="stylesheet">
+  </head>
+  <body>
+      <header>
+        <nav>
+            <div id ="navLogo" class="nav">EnrollMe.Info</div>
+            <div id="navDescription" class="nav">Find the best public school.</div>
+            <div id="home" class ="nav navLinks">Home</div>
+            <div id="about" class="nav navLinks">About</div>
+            <div id="contact" class="nav navLinks">Contact</div>
+            <!-- <span class="map-icon map-icon-airport"></span> -->
+        </nav>
+      </header>
+    <main>
+    <div id="map"></div>
+    <aside id="sidebar">
+        <div id=sbTitle>Find the best public schools.</div>
+
+
+        <div id="scale">
+            <div value="blue" class="colorButton" id="cbBlue"></div>
+            <div value="green" class="colorButton" id="cbGreen"></div>
+            <div value="yellow" class="colorButton" id="cbYellow"></div>
+            <div value="orange" class="colorButton" id="cbOrange"></div>
+            <div value="red" class="colorButton" id="cbRed"></div>
+          </div>
+        <div id="card">
+          <div class="Ex" id="blueEx">DPS assigns <span class="bText">blue</span> to <span class="bText">distinguished</span> schools with the highest achieving students. The seats at these schools
+          fill up quickly. Less than 10% of DPS schools are <span class="bText">blue</span>. We recommend applying.</div>
+          <div class="Ex" id="greenEx">DPS assigns <span class="gText">green</span> to schools that <span class="gText">meet expectations</span>. About one third of schools in DPS are <span class="gText">green</span>. We'd apply for a seat at these
+          schools too.</div>
+          <div class="Ex" id="yellowEx">DPS assigns <span class="yText">yellow</span> to schools that are <span class="yText">"Accredited on Watch"</span> and are expected to raise their
+          student achievement levels among other requirements. About 25% of schools in DPS are <span class="yText">yellow</span>.</div>
+          <div class="Ex" id="orangeEx">DPS assigns <span class="oText">orange</span> to schools that are <span class="oText">"Accredited on Priority Watch"</span> and meet less than 40% of the expectations
+          set by Denver Public Schools. About 5% of schools are <span class="oText">orange</span>.</div>
+          <div class="Ex" id="redEx">DPS assigns <span class="rText">red</span> to schools that are <span class="rText">"Accredited on Probation"</span> and meet less than 33% of the expectations set by Denver Public
+          Schools. About 12% of schools are <span class="rText">red</span>.</div>
+          <div id="missionStatement">
+            Not all public schools are created the same. We're here to make sure you find the right one for you
+            and your kids.
+          </div>
+        </div>
+
+
+        <div id="colorAndType">
+          <div><label id="colorId" class="color">Performance</label>
+          </div>
+          <div>
+        <form id="cc">
+            <div id=colorInput>
+            <input id="blueCheck" type="checkbox" class="colorcheck typeColor" name="blue" value="blue">Blue
+            <input id="greenCheck" type="checkbox" class= "colorcheck typeColor" name="green" value"green" >Green
+            <input id="yellowCheck" type="checkbox" class= "colorcheck typeColor" name="yellow" value="yellow">Yellow
+            <input id="orangeCheck" type="checkbox" class= "colorcheck typeColor" name="orange" value="orange">Orange
+            <input id="redCheck" type="checkbox" class= "colorcheck typeColor" name="red" value="red">Red
+          </div>
+            <div id="colorButton">
+            <button id="colorReset" class="colorcheck resetButton" type="submit">Clear</button>
+          </div>
+        </form>
+      </div>
+      </div>
+      <div id="sideBySide">
+        <div id="divType">
+          <div>
+            <label id="labelType" class="schooltype">Grade Levels</label>
+          </div>
+          <div id="dType">
+            <div>
+            <form id="type">
+              <input id="elem" type="checkbox" class="schoolcheck cat typeCheck typeColor" name="elem" value="elem">Elem
+              <input id="middle" type="checkbox" class="schoolcheck cat typeCheck typeColor" name="middle" value="middle">Middle
+              <input id="high" type="checkbox" class="schoolcheck cat typeCheck typeColor" name="high" value="high">High
+            </div>
+             <div id="buttonTypeDiv">
+                  <button id="schoolReset" class="resetButton" type="submit">Clear</button>
+                </div>
+              </form>
+            </div>
+        </div>
+        <div id="orgAndColor">
+          <div id="orgId">
+            <label class="organizer">Organization</label>
+          </div>
+          <form id="org">
+            <div id="formInputDiv">
+          <input id="schoolOpt" placeholder="DPS, Strive, etc..."list= "dataOperator" type="text" name="schoolType" class="schoolType corg" disabled>
+            <datalist id="dataOperator">
+            </datalist>
+          </div>
+          <div id="orgColorButtons">
+            <button id="opType" value="bot" type="submit">Submit</button>
+            <button id="opReset" type="submit">Clear</button>
+          </div>
+          </form>
+        </div>
+      </div>
+        <div id="gradeInfo">Schools change more often then you might think. We <span class="tourText">always</span> recommend <span class="tourText">taking a tour</span>
+        to get all of the details you need.</div>
+        <div id="asideFooter">
+          <div id="data">~~~~~In Data We Trust~~~~~</div>
+          <div><a href="https://www.dpsk12.org/denverplan/" target="_blank">Denver Strategic Plan</a></div>
+          <div><a href="http://spf.dpsk12.org/wp-content/uploads/2017/01/2016SPF_FinalRatings_Traditional.pdf" target="_blank">School Performance Data</a></div>
+          <div><a href="http://schoolchoice.dpsk12.org/schoolchoice/" target="_blank">Denver School Choice Information</a></div>
+        </div>
+    </aside>
+    </main>
+    <footer>
+      <div class="foot">Donate Here!</div><div class="foot">Facebook and others.</div><div class="foot" id="footLogo">EnrollMe.Info</div><div class="foot">Our Team</div><div class="foot">FAQ</div>
+    </footer>
+    <script src="./map-icons-master 2/dist/js/map-icons.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDthMGkdwvdBcUC9UvUr0Ow8lM4ydNr3RU&callback=initMap"
+    async defer></script>
+    <script src="main.js"></script>
+  </body>
+</html>
